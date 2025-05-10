@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseGameProject
+namespace RPGProject
 {
   public class GameStateMachine
   {
@@ -35,7 +35,9 @@ namespace BaseGameProject
 
     public void Update(Input input)
     {
-      GameStack[^1].Update(input);
+      if(GameStack.Count > 0) {
+        GameStack[^1].Update(input);
+      }
     }
 
     public void Draw(IArtist artist)

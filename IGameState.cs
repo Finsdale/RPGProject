@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseGameProject
+namespace RPGProject
 {
   public interface IGameState
   {
